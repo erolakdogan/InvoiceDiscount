@@ -16,9 +16,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github", "github", "{0431FBDE-2707-45AE-8CD7-E7D131EE101B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{49D7A475-7049-4937-9186-6A763DDCFDDC}"
-	ProjectSection(SolutionItems) = preProject
-		dotnetcore.yml = dotnetcore.yml
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
