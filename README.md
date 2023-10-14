@@ -16,7 +16,7 @@ InvoiceDiscount.CLI: Kullanıcı girişi ve indirim hesaplamaları için konsol 
 - .NET Core 7
 - Bir IDE (Visual Studio, Rider veya Visual Studio Code tavsiye edilir)
 
-##Kurulum:
+## Kurulum:
 
 1. **Repo'yu Klonlama**:
    - Projeyi yerel makinanıza klonlayın:
