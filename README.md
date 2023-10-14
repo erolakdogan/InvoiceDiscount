@@ -2,10 +2,10 @@
 
 InvoiceDiscount, .NET Core 7 ile geliştirilen, faturada müşteri indirimlerini customer olarak hesaplamak için oluşturulan bir projedir. Bu projede SOLID prensiplerine dikkat edilmiştir. Ayrıca FluentValidation kütüphanesi kullanılmış ve Moq ile birlikte birim testleri gerçekleştirilmiştir.Projede herhangi bir database kullanılmamıştır.Ancak istenildiğinde genişletilebilir.Ayrıca proje isteklerinde talep edilen indirim türleride çeşitlendirilmesi ve implement edilmesi basit bir şekilde yapılabilir.
 
-##Mimari
+## Mimari
 Projede kullanılan mimari CLEAN Architecture uygulanıp. Müşteri tipine göre indirim hesaplama stratejileri Strateji Tasarım Desenine (Strategy Design Pattern) ile implemente edilmiştir.
 
-##Projede Bulunan Ana Bileşenler:
+## Projede Bulunan Ana Bileşenler:
 InvoiceDiscount.API (Rest Servis Katmanı)
 InvoiceDiscount.Application:(Interface- DTO - Strategies bulunduğu katman)
 InvoiceDiscount.Domain(Entites Katmanı)
@@ -54,7 +54,4 @@ InvoiceDiscount.CLI: Kullanıcı girişi ve indirim hesaplamaları için konsol 
 
 [![.NET Build and Test](https://github.com/erolakdogan/InvoiceDiscount/workflows/.NET/badge.svg)](https://github.com/erolakdogan/InvoiceDiscount/actions?query=workflow%3A.NET)
 
-
-## Lisans
-Bu proje MIT lisansı ile lisanslanmıştır.
 
