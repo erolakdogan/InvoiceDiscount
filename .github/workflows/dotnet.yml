@@ -15,25 +15,28 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
+    - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Setup .NET Core SDK
+    - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '7.x'
+        dotnet-version: 7.0.x
 
     - name: Restore dependencies
-      run: dotnet restore InvoiceDiscount/InvoiceDiscount.sln
+      run: dotnet restore InvoiceDiscount.sln
 
-    - name: Build solution
-      run: dotnet build InvoiceDiscount/InvoiceDiscount.sln --no-restore -c Release
+    - name: Build solution (Release)
+      run: dotnet build InvoiceDiscount.sln --no-restore -c Release
 
-    - name: Run tests
-      run: dotnet test InvoiceDiscount/InvoiceDiscount.Test/InvoiceDiscount.Test.csproj --no-build -c Release --logger "trx;LogFileName=test_results.xml"
+    - name: Test
+      run: dotnet test InvoiceDiscount.Test/InvoiceDiscount.Test.csproj --no-build -c Release --logger "trx;LogFileName=test_results.xml"
 
-    - name: Publish Unit Test Results
-      uses: EnricoMi/publish-unit-test-result-action@v1
+    - name: Upload test results
       if: always()
+      uses: actions/upload-artifact@v2
       with:
-        files: InvoiceDiscount.Test/test_results.xml
+        name: test_results
+        path: InvoiceDiscount.Test/TestResults/test_results.xml
+
+     
