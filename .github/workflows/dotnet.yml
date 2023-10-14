@@ -30,12 +30,11 @@ jobs:
       run: dotnet build InvoiceDiscount.sln --no-restore -c Release
 
     - name: Test
-      working-directory: ./InvoiceDiscount/InvoiceDiscount.Test
-      run: dotnet test InvoiceDiscount.Test.csproj --no-build -c Release --logger "trx;LogFileName=test_results.xml"
-      
+      run: dotnet test InvoiceDiscount.Test/InvoiceDiscount.Test.csproj --no-build -c Release --logger "trx;LogFileName=test_results.xml"
+
     - name: Upload test results
       if: always()
       uses: actions/upload-artifact@v2
       with:
-         name: test_results
-         path: ./InvoiceDiscount/InvoiceDiscount.Test/test_results.xml
+        name: test_results
+        path: InvoiceDiscount.Test/test_results.xml
