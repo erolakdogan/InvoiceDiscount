@@ -30,7 +30,7 @@ jobs:
       run: dotnet build InvoiceDiscount.sln --no-restore -c Release
 
     - name: Test
-      run: dotnet test InvoiceDiscount/InvoiceDiscount.Test/InvoiceDiscount.Test.csproj --no-build -c Release --logger "trx;LogFileName=test_results.xml"
+      run: dotnet test InvoiceDiscount.Test/InvoiceDiscount.Test.csproj --no-build -c Release --logger "trx;LogFileName=test_results.xml"
       
     - name: Upload test results
       if: always()
