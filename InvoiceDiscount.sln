@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github", "github", "{0431FB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{49D7A475-7049-4937-9186-6A763DDCFDDC}"
 	ProjectSection(SolutionItems) = preProject
-		dotnet-ci.yml = dotnet-ci.yml
+		dotnetcore.yml = dotnetcore.yml
 	EndProjectSection
 EndProject
 Global
