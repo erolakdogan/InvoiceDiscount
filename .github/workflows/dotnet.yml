@@ -37,4 +37,6 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: test_results
-        path: InvoiceDiscount.Test/test_results.xml
+        path: InvoiceDiscount.Test/TestResults/test_results.xml
+
+     
