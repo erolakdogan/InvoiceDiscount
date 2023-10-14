@@ -11,29 +11,29 @@ on:
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Setup .NET Core
+    - name: Setup .NET Core SDK
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 7.0.100
+        dotnet-version: '7.x'
 
     - name: Restore dependencies
-      run: dotnet restore InvoiceDiscount.sln
+      run: dotnet restore InvoiceDiscount/InvoiceDiscount.sln
 
-    - name: Build
-      run: dotnet build InvoiceDiscount.sln --no-restore
+    - name: Build solution
+      run: dotnet build InvoiceDiscount/InvoiceDiscount.sln --no-restore -c Release
 
-    - name: Run Tests
-      run: dotnet test InvoiceDiscount.Test/InvoiceDiscount.Test.csproj --no-build --verbosity normal --logger "trx;LogFileName=test_results.xml"
+    - name: Run tests
+      run: dotnet test InvoiceDiscount/InvoiceDiscount.Test/InvoiceDiscount.Test.csproj --no-build -c Release --logger "trx;LogFileName=test_results.xml"
 
-    - name: Publish Test Results
-      if: always()
+    - name: Publish Unit Test Results
       uses: EnricoMi/publish-unit-test-result-action@v1
+      if: always()
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
         files: InvoiceDiscount.Test/test_results.xml
