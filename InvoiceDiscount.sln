@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceDiscount.API", "InvoiceDiscount.API\InvoiceDiscount.API.csproj", "{076B9DD2-B0AF-49C1-BBC9-2F7C71B27FED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceDiscount.API", "InvoiceDiscount.API\InvoiceDiscount.API.csproj", "{076B9DD2-B0AF-49C1-BBC9-2F7C71B27FED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceDiscount.Test", "InvoiceDiscount.Test\InvoiceDiscount.Test.csproj", "{8D79BCB8-F43D-41D9-9CB3-60148765BB96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceDiscount.Test", "InvoiceDiscount.Test\InvoiceDiscount.Test.csproj", "{8D79BCB8-F43D-41D9-9CB3-60148765BB96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceDiscount.Application", "InvoiceDiscount.Application\InvoiceDiscount.Application.csproj", "{1F065418-382E-4DA2-9649-18CBC157BBB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceDiscount.Application", "InvoiceDiscount.Application\InvoiceDiscount.Application.csproj", "{1F065418-382E-4DA2-9649-18CBC157BBB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceDiscount.Domain", "InvoiceDiscount.Domain\InvoiceDiscount.Domain.csproj", "{8375FD3D-E055-425E-9C46-F76121738BD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceDiscount.Domain", "InvoiceDiscount.Domain\InvoiceDiscount.Domain.csproj", "{8375FD3D-E055-425E-9C46-F76121738BD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceDiscountCLI", "InvoiceDiscountCLI\InvoiceDiscountCLI.csproj", "{BC243508-061F-4C00-BFE3-AB60375A76AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceDiscount.CLI", "InvoiceDiscountCLI\InvoiceDiscount.CLI.csproj", "{BC243508-061F-4C00-BFE3-AB60375A76AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
