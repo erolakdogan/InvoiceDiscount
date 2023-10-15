@@ -5,6 +5,6 @@ namespace InvoiceDiscount.Domain.Enums
     {
         Groceries,
         Electronics,
-        Clothing,
+        Other,
     }
 }
