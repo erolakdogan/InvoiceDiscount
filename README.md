@@ -51,8 +51,9 @@ InvoiceDiscount.CLI: Kullanıcı girişi ve indirim hesaplamaları için konsol 
      cd InvoiceDiscount.Test
      dotnet test
      ```
-
-![UML Diyagramı](https://github.com/erolakdogan/InvoiceDiscount/blob/master/InvoiceDiscountDiagram.png)
+     
+## UML Diyagram
+![UML Diyagram](https://github.com/erolakdogan/InvoiceDiscount/blob/master/InvoiceDiscountDiagram.png)
 
 [![.NET Build and Test](https://github.com/erolakdogan/InvoiceDiscount/workflows/.NET/badge.svg)](https://github.com/erolakdogan/InvoiceDiscount/actions?query=workflow%3A.NET)
 
